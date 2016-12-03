@@ -1,0 +1,24 @@
+
+.subpage{
+  @subWidth: 220px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  &-left{
+    flex-basis:@subWidth;
+    margin-right:40px;
+  }
+  &-right{
+    flex: 1;
+  }
+  @media(max-width: (@screen-xs-max+@subWidth)) {
+    flex-flow: column;
+    &-left{
+      flex:1;
+      margin: 0 0 40px 0;
+    }
+    &-right{
+      width: 100%;
+    }
+  }
+}

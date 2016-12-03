@@ -1,0 +1,31 @@
+.f-box{
+  padding: 20px;
+  margin: 0;
+  &.relaxed{
+    padding: 40px;
+  }
+  &.bottomBordered{
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    &:last-child{
+      border-bottom: none;
+    }
+  }
+  &.bg{
+    background: @transparentBlack;
+  }
+  &.noteBg{
+    background: rgba(167, 165, 142, 0.15);
+  }
+  &.white{
+    background: #fff;
+  }
+  &.fitted{
+    padding: 0;
+  }
+  &.rounded{
+    border-radius: 8px;
+  }
+  &.compact{
+    padding: 8px;
+  }
+}

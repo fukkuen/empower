@@ -1,0 +1,39 @@
+@import '../fuku/fuku.variables.less';
+@import '../fuku/fuku.mixins.less';
+@import 'page';
+@import 'fuku.override.less';
+
+.blueSegment{
+  background: @secondaryColor;
+  padding: 20px;
+}
+
+.mainContent{
+  position: relative;
+  z-index: 1;
+  min-height: 1000px;
+  background-color: #f5f5f5;
+  background-image: url(../../images/plus-white-10.gif);
+  background-repeat: repeat;
+  padding: 100px 0 40px 0;
+  &-content{
+    z-index: 2;
+    position: relative;
+  }
+  &-graphic{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 500px;
+    background-image: url('../../images/book-bridge.svg');
+    background-repeat: repeat-y;
+    opacity: 0.1;
+  }
+}
+
+.body2 >div{
+  margin-bottom:20px;
+}
+

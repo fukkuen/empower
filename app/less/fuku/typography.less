@@ -1,0 +1,135 @@
+@import 'fuku.variables.less';
+
+.headDisplay0{
+  font-family: @headerFont;
+  font-weight: 300;
+  font-size: 128px;
+  line-height: 128px;
+  color: @textColor;
+  .margined-typo(-7px, 30px);
+  .typoVariation();
+}
+
+.headDisplay1{
+  font-family: @headerFont;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 80px;
+  color: @textColor;
+  .margined-typo(-7px, 30px);
+  .typoVariation();
+}
+
+.headDisplay2{
+  font-family: @headerFont;
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 1.1em;
+  color: @textColor;
+  letter-spacing: 4px;
+  .margined-typo(-3px, 50px);
+  .typoVariation();
+}
+
+.headDisplay3 {
+  font-family: @headerFont;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.66);
+  .margined-typo(-6px, 30px);
+  .typoVariation();
+}
+
+.subhead1 {
+  font-family: @headerFont;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.4;
+  color: @textColor;
+  .margined-typo(-6px, 20px);
+  .typoVariation();
+}
+
+.subhead2 {
+  font-family: @headerFont;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.4em;
+  color: @textColor;
+  letter-spacing: 1px;
+  .margined-typo(-4px, 20px);
+  .typoVariation();
+}
+
+.subhead3 {
+  font-family: @headerFont;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: @lightTextColor;
+  .margined-typo(-4px, 20px);
+  .typoVariation();
+}
+
+.headline{
+  font-size: 17px;
+  font-weight: bold;
+  .margined-typo(-2px, 20px);
+  .typoVariation();
+}
+
+
+.body1{
+  font-family: @pageFont;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgba(0,0,0,0.88);
+  .typoVariation();
+  .margined-typo(-2px, 20px);
+}
+
+.body2{
+  font-family: @pageFont;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.5em;
+  color: rgba(0,0,0,0.67);
+  p{
+    margin: 1em 0;
+  }
+  .margined-typo(-2px, 20px);
+}
+
+.info1 {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: @headerFont;
+  line-height: 1.33em;
+  color: @lightTextColor;
+  margin: 6px 0;
+}
+
+
+.margined-typo(@firstMargin, @margin: 20px) {
+  margin: (@margin) 0;
+  &:first-child{
+    margin-top: @firstMargin;
+  }
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+.typoVariation() {
+  &.inverted {
+    color: @invertedTextColor;
+  }
+  &.theme{
+    color: @themeTextColor;
+  }
+  &.fitted{
+    margin: 0;
+  }
+}

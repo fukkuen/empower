@@ -1,0 +1,192 @@
+.headDisplay0 {
+  font-family: 'Poppines', 'cwTeXHei', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 128px;
+  line-height: 128px;
+  color: #000000;
+  margin: 30px 0;
+}
+.headDisplay0:first-child {
+  margin-top: -7px;
+}
+.headDisplay0:last-child {
+  margin-bottom: 0;
+}
+.headDisplay0.inverted {
+  color: rgba(255, 255, 255, 0.88);
+}
+.headDisplay1 {
+  font-family: 'Poppines', 'cwTeXHei', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 80px;
+  color: #000000;
+  margin: 30px 0;
+}
+.headDisplay1:first-child {
+  margin-top: -7px;
+}
+.headDisplay1:last-child {
+  margin-bottom: 0;
+}
+.headDisplay1.inverted {
+  color: rgba(255, 255, 255, 0.88);
+}
+.headDisplay1.theme {
+  color: #02d2f0;
+}
+.headDisplay2 {
+  font-family: 'Poppines', 'cwTeXHei', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 1.1em;
+  color: #000000;
+  margin: 50px 0;
+}
+.headDisplay2:first-child {
+  margin-top: -3px;
+}
+.headDisplay2:last-child {
+  margin-bottom: 0;
+}
+.headDisplay2.inverted {
+  color: rgba(255, 255, 255, 0.88);
+}
+.headDisplay3 {
+  font-family: 'Poppines', 'cwTeXHei', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.66);
+  margin: 30px 0;
+}
+.headDisplay3:first-child {
+  margin-top: -6px;
+}
+.headDisplay3:last-child {
+  margin-bottom: 0;
+}
+.headDisplay3.inverted {
+  color: rgba(255, 255, 255, 0.88);
+}
+.headDisplay3.fitted {
+  margin: 0;
+}
+.subhead1 {
+  font-family: 'Poppines', 'cwTeXHei', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #000000;
+  margin: 20px 0;
+}
+.subhead1:first-child {
+  margin-top: -6px;
+}
+.subhead1:last-child {
+  margin-bottom: 0;
+}
+.subhead1.inverted {
+  color: rgba(255, 255, 255, 0.88);
+}
+.subhead1.theme {
+  color: #28e2fd;
+}
+.subhead2 {
+  font-family: 'Poppines', 'cwTeXHei', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4em;
+  color: #000000;
+  margin: 20px 0;
+}
+.subhead2:first-child {
+  margin-top: -4px;
+}
+.subhead2:last-child {
+  margin-bottom: 0;
+}
+.subhead2.inverted {
+  color: rgba(255, 255, 255, 0.88);
+}
+.subhead3 {
+  font-family: 'Poppines', 'cwTeXHei', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.5411);
+  margin: 20px 0;
+}
+.subhead3:first-child {
+  margin-top: -4px;
+}
+.subhead3:last-child {
+  margin-bottom: 0;
+}
+.subhead3.inverted {
+  color: rgba(255, 255, 255, 0.88);
+}
+.subhead3.colored {
+  color: #02d2f0;
+}
+.subhead3.fitted {
+  margin: 0;
+}
+.body1 {
+  font-family: 'Poppines', 'cwTeXHei', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin: 20px 0;
+}
+.body1:first-child {
+  margin-top: -2px;
+}
+.body1:last-child {
+  margin-bottom: 0;
+}
+.body1 > p {
+  margin: 20px 0;
+}
+.body1 > p:first-child {
+  margin-top: -6px;
+}
+.body1 > p:last-child {
+  margin-bottom: 0;
+}
+.body2 {
+  font-family: 'Poppines', 'cwTeXHei', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+  margin: 20px 0;
+}
+.body2:first-child {
+  margin-top: -2px;
+}
+.body2:last-child {
+  margin-bottom: 0;
+}
+.body2 > p {
+  margin: 20px 0;
+}
+.body2 > p:first-child {
+  margin-top: -2px;
+}
+.body2 > p:last-child {
+  margin-bottom: 0;
+}
+.body2.inverted {
+  color: rgba(255, 255, 255, 0.88);
+}
+.info {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Poppines', 'cwTeXHei', Arial, Helvetica, sans-serif;
+  line-height: 1.33em;
+  color: rgba(0, 0, 0, 0.5411);
+  margin: 6px 0;
+}

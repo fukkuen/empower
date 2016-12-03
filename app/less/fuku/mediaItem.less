@@ -1,0 +1,59 @@
+@import '../semantic/site.variables.less';
+
+.mediaItem {
+  // with a parent container > 600px (e.g. if sidebar 200px, collapse the sidebar at 800px)
+  // will collapse < 600px[
+  // Responsive breakpoint: >800px, >600px && <800px, <600px
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 40px 0;
+  &:first-child{margin-top: 0;}
+  &:last-child{margin-bottom: 0;}
+  &-left {
+    flex-shrink: 0;
+    max-width: 35%;
+  }
+  &-right {
+    padding-left:20px;
+  }
+  // this is optional (if you want to make 3 column with the center filling the space)
+  &-center{
+    flex: 1;
+    padding-left: 20px;
+  }
+  &.alignCenter{
+    align-items: center;
+    @media(max-width: @screen-sm) {
+      align-items: flex-start;
+    }
+    @media(max-width: @screen-sm) {
+
+    }
+  }
+  @media(max-width: @screen-sm) {
+    flex-flow: column;
+    &-left {
+      max-width: 100%;
+      padding: 10px;
+    }
+    &-right {
+      padding: 10px;
+    }
+    &-center{
+      padding: 10px;
+    }
+  }
+}
+
+.mediaDate{
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  &-left{
+    padding-right:6px;
+  }
+  &-right{
+
+  }
+}

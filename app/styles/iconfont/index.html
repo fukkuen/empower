@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Iconfont - Value Guided System - DesignLAB</title>
+	<link rel="icon" href="../preview-assets/favicon.ico.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../preview-assets/display-previews.css">
+    <link rel="stylesheet" type="text/css" href="dl-icon.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="../preview-assets/data-icon.js"></script>
+    <style>
+    body{background: #fff !important;}
+    .container{width: 900px !important;}
+    </style>
+</head>
+<body class="container pt-50 pb-50">
+
+<script type="text/template" class="iconTemplate">
+    
+    <% _.each(rc.categories, function(category){ %>
+    
+    <% if (category.iconfont == true) { %>
+
+    <div class="xr h3 header color-dlabText"><%- category.name %></div>
+    
+
+    <div class="xr flex-wrap position-relative iconSectionContainer iconSetContainer iconfont-<%- category.iconfont %> <%- category.name %>">
+            
+        <div class="hide-border-left"></div>
+        
+        <div class="hide-border-bottom"></div>
+        <div class="vertical-border-1"></div>
+        <div class="vertical-border-2"></div>
+        <div class="vertical-border-3"></div>
+        <div class="vertical-border-4"></div>
+        <div class="vertical-border-5"></div>
+        <div class="vertical-border-6"></div>
+        <div class="vertical-border-7"></div>
+        <div class="vertical-border-8"></div>
+        
+        	<% _.each(category.icons, function(icon){ %>
+    
+            <div class="xr segment text-align-center width-100 mb-0 mt-0 color-white">
+                <div class="main svg-img-container">
+
+                    <div class="content pb-10"><i style="color: #000;" class="icon center-block <%- icon.name %>"></i></div>
+                    <div class="content font-size-10 nameDisplay text-align-center color-text"><%- icon.display_name %></div>                
+                </div>                                
+            </div>
+
+            <% }); %>
+          
+    </div>
+    <div class="xr section divider mt-40 mb-40"></div>
+
+    <% }; %>
+
+    <% }); %>
+        
+</script>
+
+<script>
+	_.templateSettings.variable = "rc";
+	var template = _.template($("script.iconTemplate").html());
+
+	$("body").html(template(iconData));
+</script>
+</body>
+</html>

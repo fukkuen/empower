@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href='styles/bootstrap/normalize.css'>
+    <link rel="stylesheet" href='styles/bootstrap/utilities.css'>
+    <link rel="stylesheet" href='styles/bootstrap/responsive-utilities.css'>
+    <link rel="stylesheet" href='styles/semantic/globals/reset.css'>
+    <link rel="stylesheet" href='styles/semantic/globals/site.css'>
+
+    <!-- elements -->
+    <link rel="stylesheet" href='styles/custom/typography.css'>
+    <link rel="stylesheet" href='styles/iconfont/dl-icon.css'>
+    <link rel="stylesheet" href='styles/semantic/elements/button.css'>
+    <link rel="stylesheet" href='styles/semantic/elements/container.css'>
+    <link rel="stylesheet" href='styles/semantic/elements/divider.css'>
+    <link rel="stylesheet" href='styles/semantic/elements/input.css'>
+    <link rel="stylesheet" href='styles/semantic/elements/image.css'>
+    <link rel="stylesheet" href='styles/semantic/elements/label.css'>
+    <link rel="stylesheet" href='styles/semantic/elements/list.css'>
+    <link rel="stylesheet" href='styles/semantic/elements/segment.css'>
+
+    <!-- collection -->
+    <link rel="stylesheet" href='styles/bootstrap/grid.css'>
+    <link rel="stylesheet" href='styles/semantic/collections/breadcrumb.css'>
+    <link rel="stylesheet" href='styles/semantic/collections/form.css'>
+    <link rel="stylesheet" href='styles/semantic/collections/menu.css'>
+
+    <!-- modules -->
+    <link rel="stylesheet" href='styles/semantic/modules/dropdown.css'>
+    <link rel="stylesheet" href='styles/semantic/modules/transition.css'>
+
+    <!-- context -->
+    <link rel="stylesheet" href='styles/custom/context.css'>
+    <link rel="stylesheet" href='styles/fuku.css'>
+
+    <!-- endbuild -->
+  </head>
+  <body ng-app="appApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <div ng-include="'views/topbar.html'"></div>
+
+    <div ng-view></div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/articles.js"></script>
+        <script src="scripts/controllers/articledetails.js"></script>
+        <script src="scripts/controllers/events.js"></script>
+        <script src="scripts/controllers/team.js"></script>
+        <script src="scripts/controllers/topbar.js"></script>
+        <script src="scripts/controllers/mission.js"></script>
+        <!-- endbuild -->
+
+    <script src="scripts/external/jquery.min.js"></script>
+    <script src="scripts/external/semantic.min.js"></script>
+
+</body>
+</html>

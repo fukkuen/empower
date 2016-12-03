@@ -1,0 +1,217 @@
+.introSection {
+  position: relative;
+  height: 635px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  background-image: url(../../images/plus-white-10.gif);
+  background-repeat: repeat;
+}
+.introSection .square {
+  position: absolute;
+  left: 0;
+  bottom: 200px;
+  border-radius: 500em;
+  width: 100%;
+  z-index: 1;
+  background: #28e2fd;
+}
+.introSection .title {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  font-size: 120px;
+  font-weight: 600;
+  color: #2ab9f0;
+  line-height: 1;
+}
+.eventSection .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: 768px;
+  position: relative;
+}
+.eventSection-left,
+.eventSection-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 60px 30px;
+}
+.eventSection-left {
+  background: #f5f5f5;
+  position: relative;
+  margin: 20px 0;
+}
+.eventSection-left-bg {
+  position: absolute;
+  top: 200px;
+  bottom: 0;
+  right: -20px;
+}
+.eventSection-left-full-bg {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #f5f5f5;
+}
+.eventFeeds {
+  margin-bottom: 50px;
+}
+.eventSection-right .headDisplay3 .icon {
+  font-size: 0.4em;
+  position: relative;
+  top: -26px;
+}
+.teamSection {
+  overflow: hidden;
+  background-image: url(../../images/people-around.svg);
+}
+.teamSection-graphic1,
+.teamSection-graphic2 {
+  position: absolute;
+  z-index: 2;
+  top: -140px;
+  -webkit-transform: rotate(150deg) scale(3);
+          transform: rotate(150deg) scale(3);
+}
+.teamSection-graphic1 {
+  left: 120px;
+}
+.teamSection-graphic2 {
+  left: 140px;
+}
+.teamSection-main {
+  position: relative;
+  z-index: 1;
+  margin: 60px 60px;
+  padding: 50px;
+  border: 8px solid #2ab9f0;
+}
+.teamSection .headDisplay2 {
+  position: relative;
+  z-index: 100;
+}
+.teamSection .lightBlueColor.icon {
+  font-size: 1.5em;
+}
+.storySection {
+  position: relative;
+  min-height: 768px;
+  padding: 50px;
+  background-color: #f5f5f5;
+  background-image: url(../../images/plus-white-10.gif);
+  background-repeat: repeat;
+}
+.storySection-graphic {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 500px;
+  background-image: url('../../images/book-bridge.svg');
+  background-repeat: repeat-y;
+  opacity: 0.3;
+}
+.storySection .container {
+  position: relative;
+  z-index: 2;
+  width: 720px;
+}
+.storySection .media {
+  margin-bottom: 30px;
+}
+.storySection .media-left {
+  padding: 20px 0;
+  margin-right: 20px;
+  -ms-flex-preferred-size: 280px;
+      flex-basis: 280px;
+  position: relative;
+}
+.storySection .media-left i.icon {
+  font-size: 22px;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  bottom: 0;
+  margin-top: -10px;
+}
+.mediaDate .headDisplay1 {
+  line-height: 60px;
+  margin-top: 0;
+}
+.headDisplay3 {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.1em;
+}
+.headDisplay3.blue {
+  color: #28e2fd;
+}
+.mediaItem.mediaItem_Member {
+  margin: 60px 0;
+}
+.mediaItem.mediaItem_Member:first-child {
+  margin-top: 0;
+}
+.mediaItem.mediaItem_Member:last-child {
+  margin-bottom: 0;
+}
+.mediaItem.mediaItem_Event {
+  margin: 20px 0;
+}
+.mediaItem.mediaItem_Event:first-child {
+  margin-top: 0;
+}
+.mediaItem.mediaItem_Event:last-child {
+  margin-bottom: 0;
+}
+.headDisplay1.headDisplay1_Date {
+  font-size: 90px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.ui.label.label_Week {
+  border: 1px solid rgba(0, 0, 0, 0.4) !important;
+  background: none !important;
+}
+.timeInfo {
+  font-size: 15px;
+  padding-top: 6px;
+}
+.blueSegment {
+  background: #2ab9f0;
+  padding: 20px;
+}
+.mainContent {
+  position: relative;
+  z-index: 1;
+  min-height: 1000px;
+  background-color: #f5f5f5;
+  background-image: url(../../images/plus-white-10.gif);
+  background-repeat: repeat;
+  padding: 100px 0 40px 0;
+}
+.mainContent-content {
+  z-index: 2;
+  position: relative;
+}
+.mainContent-graphic {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 500px;
+  background-image: url('../../images/book-bridge.svg');
+  background-repeat: repeat-y;
+  opacity: 0.1;
+}
+.body2 > div {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,155 @@
+.introSection{
+  position: relative;
+  height: 768-133px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  background-image: url(../../images/plus-white-10.gif);
+  background-repeat: repeat;
+  .square{
+    position: absolute;
+    //top:0;
+    left: 0;
+    bottom: 200px;
+    border-radius: 500em;
+    width: 100%;
+    z-index: 1;
+    background: @primaryColor;
+  }
+
+  .title {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    font-size: 120px;
+    font-weight: 600;
+    color: @secondaryColor;
+    line-height: 1;
+  }
+}
+
+// event section
+.eventSection{
+  .container{
+    display: flex;
+    align-items: stretch;
+    height: 768px;
+    position: relative;
+  }
+  &-left, &-right{
+    flex: 1;
+    padding: 60px 30px;
+  }
+  &-left{
+    background: #f5f5f5;
+    position: relative;
+    margin: 20px 0;
+    &-bg{
+      position: absolute;
+      top:200px;
+      bottom: 0;
+      right: -20px;
+      //height: 100%;
+    }
+  }
+  &-left-full-bg{
+    position: absolute;
+    width: 50%;
+    top:0;
+    bottom:0;
+    left:0;
+    background: #f5f5f5;
+  }
+}
+
+.eventFeeds {
+  margin-bottom:50px;
+}
+
+
+// event section end
+
+.eventSection-right .headDisplay3 {
+  .icon{
+    font-size: 0.4em;
+    position: relative;
+    top: -26px;
+  }
+}
+
+// team section
+
+.teamSection{
+  overflow: hidden;
+  background-image: url(../../images/people-around.svg);
+  //background-size: cover;
+  &-graphic1, &-graphic2{
+    position: absolute;
+    z-index:2;
+    top:-140px;
+    transform: rotate(150deg) scale(3);
+  }
+  &-graphic1{
+    left:120px;
+  }
+  &-graphic2{
+    left: 140px;
+  }
+  &-main{
+    position: relative;
+    z-index: 1;
+    margin: 60px 60px;
+    padding: 50px;
+    border: 8px solid @secondaryColor;
+  }
+  .headDisplay2{
+    position: relative;
+    z-index: 100;
+  }
+  .lightBlueColor.icon{
+    font-size: 1.5em;
+  }
+}
+
+//
+.storySection {
+  position: relative;
+  min-height: 768px;
+  padding: 50px;
+  background-color: #f5f5f5;
+  background-image: url(../../images/plus-white-10.gif);
+  background-repeat: repeat;
+
+  &-graphic{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 500px;
+    background-image: url('../../images/book-bridge.svg');
+    background-repeat: repeat-y;
+    opacity: 0.3;
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+    width: 720px;
+  }
+  .media{
+    margin-bottom:30px;
+  }
+  .media-left{
+    padding: 20px 0;
+    margin-right:20px;
+    flex-basis: 280px;
+    position: relative;
+    i.icon {
+      font-size: 22px;
+      position: absolute;
+      right: -10px;
+      top:50%;
+      bottom:0;
+      margin-top: -10px;
+    }
+  }
+}

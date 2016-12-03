@@ -1,0 +1,16 @@
+<div class="mainContent">
+  <div class="mainContent-graphic"></div>
+  <div class="container mainContent-content mw850">
+    <div class="mediaItem mediaItem_Member" ng-repeat="story in articles">
+      <div class="mediaItem-left">
+        <img src="../images/event-dummy.png" alt="" class="ui image medium">
+        <!--<img src="{{story._embedded.wp:featuredmedia[0].href}}" alt="" class="ui image medium">-->
+      </div>
+      <div class="mediaItem-right pt10">
+        <div class="subhead2 fitted theme"><a href="#/articles/{{story.id}}" ng-bind-html="story.title.rendered | trust"></a></div>
+        <div class="info1"><a href="#" class="pr6">{{story._embedded.author[0].name}}</a> 發表於: {{story.date | removeTime}} <a class="pl6" href="#">＃營養</a></div>
+        <div class="body2" ng-bind-html="story.excerpt.rendered | trust"></div>
+      </div>
+    </div>
+  </div>
+</div>

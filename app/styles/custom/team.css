@@ -1,0 +1,12 @@
+.col-subpage-right {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 40px;
+}
+@media (min-width: 1100px) {
+  .col-subpage-right {
+    width: 50%;
+  }
+}

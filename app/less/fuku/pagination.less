@@ -1,0 +1,28 @@
+.pagination {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: @lightTextColor;
+  input.pagination-input{
+    font-size: 14px;
+    border: 1px solid @borderColor;
+    background: #fff;
+    padding: 0 2px;
+    width: 30px;
+    border-radius: 4px;
+    text-align: center;
+    vertical-align: baseline;
+  }
+  .pagination-prev{
+    margin-right: 12px;
+    &:hover{color: @linkColor;}
+  }
+  .pagination-next{
+    margin-left: 12px;
+    &:hover{color: @linkColor;}
+  }
+  .pagination-divider{
+    padding: 0 4px;
+    vertical-align: baseline;
+  }
+}

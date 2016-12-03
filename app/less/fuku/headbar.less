@@ -1,0 +1,35 @@
+.headbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 40px 0;
+  &:first-child{margin-top: 0;}
+  &:last-child{margin-bottom: 0;}
+  &-left{
+  }
+  &-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &.alignLeft{
+      justify-content: flex-start;
+      padding-left: 20px;
+      margin-left:30px;
+      border-left: 1px solid @borderColor;
+    }
+  }
+  @media(max-width: @screen-sm-max) {
+    flex-flow: column;
+    align-items: flex-start;
+    &-right{
+      padding-top: 20px;
+    }
+  }
+  // variation: with background
+  &.background{
+    background: @subtleTransparentBlack;
+    padding: 6px 10px;
+    border-radius: @absoluteBorderRadius;
+  }
+}

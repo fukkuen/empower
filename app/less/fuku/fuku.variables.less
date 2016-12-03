@@ -1,0 +1,78 @@
+/*-------------------
+       Fonts
+--------------------*/
+
+@fontName          : 'Poppines';
+@fontSmoothing     : antialiased;
+
+@headerFont        : @fontName, 'cwTeXHei', Arial, Helvetica, sans-serif;
+@pageFont          : @fontName, 'cwTeXHei', Arial, Helvetica, sans-serif;
+
+@googleFontName    : @fontName;
+@importGoogleFonts : true;
+@googleFontSizes   : '500,600';
+@googleSubset      : 'latin';
+
+@googleProtocol    : 'https://';
+@googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
+
+/*-------------------
+      Base Sizes
+--------------------*/
+
+/* This is the single variable that controls them all */
+@emSize   : 14px;
+
+/* The size of page text  */
+@fontSize : 14px;
+
+
+/*-------------------
+    Border Radius
+--------------------*/
+
+/* See Power-user section below
+   for explanation of @px variables
+*/
+//@relativeBorderRadius: @relative4px;
+@absoluteBorderRadius: 4px;
+
+//@defaultBorderRadius: 0;
+
+/*-------------------
+    Brand Colors
+--------------------*/
+
+@primaryColor        : #28e2fd;
+@secondaryColor      : #2ab9f0;
+@blue: #28e2fd;
+
+
+// color
+@textColor: rgba(0,0,0,0.67);
+@lightTextColor: rgba(0,0,0,0.67);
+@darkTextColor: rgba(0,0,0,0.67);
+@themeTextColor: #167fab;
+@invertedTextColor: rgba(255,255,255,0.9);
+@linkColor: #28e2fd;
+@borderColor: rgba(0,0,0,0.1);
+
+// reponsive
+@screen-xs:                  480px;
+
+// Small screen / tablet
+@screen-sm:                  600px;
+@screen-sm-min:              @screen-sm;
+
+// Medium screen / desktop
+@screen-md:                  1000px;
+@screen-md-min:              @screen-md;
+
+// Large screen / wide desktop
+@screen-lg:                  1400px;
+@screen-lg-min:              @screen-lg;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);

@@ -1,0 +1,35 @@
+// designed to be used universally for [ ] + [ ...........] layout
+// variables: left width
+// ** no margin gutter!! allow you to customize background with padding
+
+@borderColor: rgba(0,0,0,0.15);
+
+.f-flexFixedLeft{
+  @subWidth: 200px;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  &-left{
+    flex-basis:@subWidth;
+    padding-right:20px;
+    &.bordered{
+      border-right: 1px solid @borderColor;
+    }
+  }
+  &-right{
+    flex: 1;
+  }
+  @media(max-width: (@screen-xs-max)) {
+    flex-flow: column;
+    &-left{
+      flex:1;
+      &.bordered{
+        border-right: none;
+        border-bottom: 1px solid @borderColor;
+      }
+    }
+    &-right{
+      width: 100%;
+    }
+  }
+}

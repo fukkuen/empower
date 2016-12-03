@@ -1,0 +1,20 @@
+{
+  "name": "oocss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "gulp build && gulp watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-less": "^3.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-remove-empty-lines": "0.0.8",
+    "gulp-strip-css-comments": "^1.2.0"
+  }
+}

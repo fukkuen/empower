@@ -1,0 +1,32 @@
+<div class="topbar" ng-controller="TopbarCtrl">
+  <div class="topbar-left">
+    <div class="topbar-menuBtn visible-sm">
+      <i class="icon Menu-Block02"></i>
+    </div>
+    <div class="topbar-logo">
+      <img class="topbar-logo-mark" src="../images/empower-mark.png" alt="">
+      <img class="topbar-logo-type hidden-xs" src="../images/empower-logotype.png" alt="">
+    </div>
+  </div>
+  <div class="topbar-center hidden-sm">
+    <div class="topbar-center-inner">
+      <a href="#events" class="topbar-item" ng-class="{'view-active': isActive('/events')}">活動日誌</a>
+      <a href="#articles" class="ui dropdown pointing primary topbar-item" ng-class="{'view-active': isActive('/articles')}">
+        文章分享
+        <i class="icon Add fs8 pl4 top2"></i>
+        <div class="menu">
+          <div class="item">營養健康</div>
+          <div class="item">創業心得</div>
+          <div class="item">精彩回顧</div>
+          <div class="item">心靈勵志</div>
+        </div>
+      </a>
+      <a href="#team" class="topbar-item" ng-class="{'view-active': isActive('/team')}">團隊成員</a>
+      <a href="#" class="topbar-item" ng-class="{'view-active': isActive('/collaboration')}">合作伙伴</a>
+      <a href="#mission" class="topbar-item" ng-class="{'view-active': isActive('/mission')}">使命宗旨</a>
+    </div>
+  </div>
+  <div class="topbar-right hidden-sm">
+    <a href="#" class="topbar-item">活動日誌</a>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+// ref purecss
+.button() {
+  /* Structure */
+  display: inline-block;
+  zoom: 1;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.menuItem() {
+  /* Structure */
+  display: block;
+  zoom: 1;
+  white-space: nowrap;
+  line-height: normal;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.inlineFlex() {
+  display: inline-flex;
+  align-items: center;
+}
+.flexCenter(){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topLabel(@height:5px, @color:blue){
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: @height;
+  background: @color;
+}
+.margin(){
+  &:first-child{margin-top: 0;}
+  &:last-child{margin-bottom: 0;}
+}
+.marginOffset(){
+  &:first-child{margin-top: 0;}
+  &:last-child{margin-bottom: 0;}
+}
